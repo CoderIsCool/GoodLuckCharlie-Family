@@ -1,0 +1,42 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">  
+  </head>
+  <title>*Good Luck Charlie* Family Book</title>
+  <body>
+    <h1> Good Luck Charlie Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="good-luck-charlie-logo.jpeg">
+    <h3 id="one">1. Our Family Book</h3>
+     <button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=[
+   "Teddy Duncan (Daughter)",
+   "Amy Duncan (Mother)",
+   "Gabe Duncan (Son)",
+   "Charlie Duncan (Daughter)",
+   "Bob Duncan (Father)",
+   "PJ Duncan (Son)",
+   "Toby Duncan (Son)"
+   ];
+ var images=[
+   "TeddyDuncan.png",
+   "AmyDuncan.png",
+   "GabeDuncan.jpeg",
+   "CharlieDuncan.png",
+   "BobDuncan.png",
+   "PjDuncan.jpeg",
+   "TobyDuncan.png"
+ ];
+ var i=0;
+ function family(){
+   document.getElementById("one").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==7){
+     i=0;
+   }}
+  </script>
+  <script async src="https://drv.tw/inc/wd.js"></script></body>
+</html>
